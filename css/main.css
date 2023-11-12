@@ -6,8 +6,18 @@
   box-sizing: border-box;
 }
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600&display=swap');
+
+
 :root {
   --dark-color: #000;
+
+}
+.text{
+  font-size:32px;
+    color:#fff;
 }
 
 body {
@@ -18,6 +28,7 @@ body {
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
+  font-family: 'Edu TAS Beginner', cursive;
 }
 
 .night {
@@ -29,11 +40,29 @@ body {
   height: 100%;
   filter: blur(0.1vmin);
   background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(7, 107, 42), rgb(240, 240, 240));
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+.night p{
+  padding: 0 15px 5px;
+  text-align:center;
+  line-height: 1.7em;
+  color: white;
+}
+
+.night-text{
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24px;
+}
+
 
 .music {
   position: absolute;
-  top: 0px;
+  top: 10px;
 }
 
 .flowers {
